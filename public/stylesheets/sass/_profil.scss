@@ -1,0 +1,33 @@
+.formulaire {
+  width: 1200px;
+  margin: 0px 100px;
+  left: auto;
+  right: auto;
+
+  .formulaireblock {
+    legend {
+      left: 0;
+      font-family: 'roboto';
+      font-size: 28px;
+    }
+    input {
+      margin-top: 30px;
+      height: 38px;
+      background-color: $fondFormulaire;
+      border-radius: $borderFormulaire;
+      border: none;
+    }
+    ::placeholder {
+      color: black;
+      font-size: 16px;
+      padding-left: 20px;
+    }
+  }
+}
+#nom,
+#prenom {
+  width: 48%;
+}
+#email {
+  width: 100%;
+}

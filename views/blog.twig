@@ -1,0 +1,23 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+
+    {% if articles %}
+    <div class="block-article">
+    {% for article in articles %}
+        <div class="contenaire">
+            
+            <div class="texte-article">
+                <div class="title-article">{{ article.title }}</div>
+                <div class="date-article">{{ article.date }}</div>
+                <div class="introduction-article">{{ article.introduction }}</div>
+            </div>  
+            <div class="image-article"><img src="{{article.image}}" alt="{{article.title}}"></div>
+              
+        </div>
+            {% endfor %}
+    </div>
+    {% endif %}
+
+    
+{% endblock %}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<html lang="en" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Treecotage</title>
+    <link href="../stylesheets/style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+  <header>
+      <div class="banner">
+        <nav>
+          <ul>
+            <li><a href="mes-projets.html">Mes projets</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li>
+              <a href="/"><img src="/images/Logo_2.png" alt="Logo Treecotage"
+              /></a>
+            </li>
+            <li><a href="/profil/">Profil</a></li>
+            <li>
+              <button id="connexion" type="button">
+                <i class="fas fa-user-alt"></i> Se Connecter
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    {% block body %}{% endblock %}
+
+    <footer>
+      <div class="footer-elements">
+        <div class="footer-texte">
+          <nav>
+            <ul>
+              <li>Télécharger l'application</li>
+              <li><a href="/blog/">Blog</a></li>
+              <li>Contact</li>
+              <li>Presse</li>
+              <li>
+                <div class="RS">
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-youtube"></i>
+                  <i class="fab fa-pinterest-p"></i>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
