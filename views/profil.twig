@@ -1,0 +1,41 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+
+   <section>
+      <h1>Mon Profil</h1>
+      <div class="formulaire">
+        
+        <form action=" "class="formulaireblock">
+          <legend>Mes informations</legend> </br>
+          <input type="text" name="nom" id="nom" placeholder="Nom" required>
+          <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <label for="birthday">Date d'anniversaire</label>
+          <input type="date" name="birthday" id="birthday">
+
+        </form>
+        <div class="formulaire2">
+          <form action=" ">
+            <legend>Modifier le mot de passe</legend>
+            <input type="password" name="MPactuel" id="MPactuel" required>
+            <input type="password" name="nouveauMP" id="nouveauMP"required>
+            <input type="password" name="nouveauMPconfirme" id="nouveauMPconfirme" required>
+          </form>
+          <form action="">
+            <legend>Autres paramètres</legend>
+            <label for="modeNuit">Mode nuit</label>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+{% endblock %}

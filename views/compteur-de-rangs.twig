@@ -1,0 +1,82 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+
+<h1>Compteur de rangs</h1>
+    <div class="compteurRangs">
+      <section class="zoneCompteurPrincipal">
+        <div class="compteurTexte">
+          <h2>Compteur de rangs principal</h2>
+          <p class="compteurliens">Ajout de rang : +1</p>
+          <p class="compteurliens">Réinitialiser</p>
+        </div>
+        <div class="compteur">
+          <i class="fas fa-minus"></i>
+          <span id="compteur1">0</span>
+          <i class="fas fa-plus"></i>
+        </div>
+      </section>
+      <h2 id="h2compteurS">Compteurs de rangs secondaires</h2>
+      <section class="zoneCompteurSecondaire">
+        <div class="compteurS2">
+          <div class="compteurElements">
+            <i class="fas fa-minus"></i>
+            <span id="compteur2">05</span>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="texteElement">
+            <p>Compteur de rangs 2</p>
+            <p class="compteurliens">Ajout de rang : +1</p>
+            <p class="compte urliens">Réinitialiser</p>
+            <p class="compteurliens">supprimer</p>
+          </div>
+        </div>
+        <div class="compteurS2 compteurS3">
+          <div class="compteurElements">
+            <i class="fas fa-minus"></i>
+            <span id="compteur3">10</span>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="texteElement">
+            <p>Compteur de rangs 2</p>
+            <p class="compteurliens">Ajout de rang : +1</p>
+            <p class="compteurliens">Réinitialiser</p>
+            <p class="compteurliens">supprimer</p>
+          </div>
+        </div>
+        <div class="compteurS2 compteurS4">
+          <div class="compteurElements">
+            <i class="fas fa-minus"></i>
+            <span id="compteur4">08</span>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="texteElement">
+            <p>Compteur de rangs 2</p>
+            <p class="compteurliens">Ajout de rang : +1</p>
+            <p class="compteurliens">Réinitialiser</p>
+            <p class="compteurliens">supprimer</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <form action="" class="formulaireCompteur">
+          <div class="form1">
+            <label for="projet" name="projet">Affecter à un projet</label>
+            <select name="projet" id="projet-form">
+              <option value="">--Aucun projet sélectionné--</option>
+              <option value="Nolita Sweater">Nolita Sweater</option>
+              <option value="Cutie Beanie">Cutie Beanie</option></select
+            ><br />
+          </div>
+          <button type="submit">
+            <i class="fas fa-plus"></i> Ajouter un compteur
+          </button>
+        </form>
+      </section>
+    </div>
+
+{% block javascript %}
+{% javascript %}
+    <script type="text/javascript" src="../fonction/compteur-anim.js"></script>
+{% endblock %}
+{% endblock %}

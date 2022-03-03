@@ -3,7 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const Article = require('./models/article.models');
+// const Article = require('./models/article.models');
+// const Compteur = require('./models/compteur.models');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -17,6 +18,13 @@ mongoose
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
+// let compteur = new Compteur({
+//   compteurPrincipal: 0,
+//   compteur2: 0,
+//   compteur3: 0,
+//   compteur4: 0,
+// });
+
 // let article = new Article({
 //   title: 'Comment tricoter ses premières mailles ?',
 //   introduction:
@@ -26,7 +34,7 @@ mongoose
 //   image: '../images/TricotLifestyle/PullCiel.jpg',
 // });
 
-// article
+// compteur
 //   .save()
 //   .then(() => console.log('Sauvegarde Réussi !! '))
 //   .catch(() => console.log('Sauvegarde échouée !'));

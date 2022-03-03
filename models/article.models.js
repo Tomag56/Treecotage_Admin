@@ -4,7 +4,7 @@ articleSchema = mongoose.Schema({
   title: String,
   introduction: String,
   content: String,
-  publisherAt: Number,
+  publishedAt: Number,
   image: String,
 });
 
