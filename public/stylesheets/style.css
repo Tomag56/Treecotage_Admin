@@ -556,60 +556,6 @@ h1 {
           box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
 }
 
-.formulaire {
-  width: 1200px;
-  margin: 0px 100px;
-  left: auto;
-  right: auto;
-}
-
-.formulaire .formulaireblock legend {
-  left: 0;
-  font-family: 'roboto';
-  font-size: 28px;
-}
-
-.formulaire .formulaireblock input {
-  margin-top: 30px;
-  height: 38px;
-  background-color: #eef1f2;
-  border-radius: 15px;
-  border: none;
-}
-
-.formulaire .formulaireblock ::-webkit-input-placeholder {
-  color: black;
-  font-size: 16px;
-  padding-left: 20px;
-}
-
-.formulaire .formulaireblock :-ms-input-placeholder {
-  color: black;
-  font-size: 16px;
-  padding-left: 20px;
-}
-
-.formulaire .formulaireblock ::-ms-input-placeholder {
-  color: black;
-  font-size: 16px;
-  padding-left: 20px;
-}
-
-.formulaire .formulaireblock ::placeholder {
-  color: black;
-  font-size: 16px;
-  padding-left: 20px;
-}
-
-#nom,
-#prenom {
-  width: 48%;
-}
-
-#email {
-  width: 100%;
-}
-
 .block-article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,6 +671,81 @@ h1 {
   height: 192px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.formulaire {
+  width: 80%;
+  margin: 0px auto;
+  left: auto;
+  right: auto;
+}
+
+.formulaire .formulaireblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.formulaire .formulaireblock legend {
+  left: 0;
+  font-family: 'roboto';
+  font-size: 28px;
+}
+
+.formulaire .formulaireblock input {
+  margin-top: 30px;
+  height: 38px;
+  width: 100%;
+  background-color: #eef1f2;
+  border-radius: 15px;
+  border: none;
+}
+
+.formulaire .formulaireblock textarea {
+  margin-top: 30px;
+  width: 100%;
+  height: 88px;
+  background-color: #eef1f2;
+  border-radius: 15px;
+  border: none;
+}
+
+.formulaire .formulaireblock ::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.formulaire .formulaireblock :-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.formulaire .formulaireblock ::-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.formulaire .formulaireblock ::placeholder {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+#nom,
+#prenom {
+  width: 48%;
+}
+
+#email {
+  width: 100%;
 }
 
 /*LES BOUTONS********************************************************/

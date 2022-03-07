@@ -4,4 +4,36 @@
 
 
 
+<section>
+      <h1>Nouvelle article</h1>
+      <div class="formulaire">
+        
+        <form action="/nouvelle-article" class="formulaireblock">   
+        <legend>
+        </legend> </br>
+            <input type="text" name="titre" id="titre" placeholder="Titre de l'article" required>
+            <textarea name="introduction" id="introduction" cols="30" rows="10" required placeholder="Introduction"></textarea>
+            <textarea name="contenu-article1" id="contenu-article1" placeholder="Contenu1"cols="50" rows="10"></textarea>
+            <textarea name="contenu-article2" id="contenu-article2" placeholder="Contenu2"cols="50" rows="10"></textarea>
+            <input type="file" name="image-article" id="image-article">
+            
+        </form>
+        <div class="formulaire2">
+        
+          <form action="/nouvelle-article" >
+            <legend>Option de publication</legend>
+            <label for="modeNuit">Publier l'article</label>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
 {% endblock %}
